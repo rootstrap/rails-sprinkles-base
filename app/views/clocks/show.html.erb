@@ -1,5 +1,5 @@
 <h1>Client side rendered</h1>
-<%= react_component("Clock", { seconds: true, timezone: '' }) %>
+<%= react_component("Clock", props: { seconds: true, timezone: '' }) %>
 
 <h1>Server side rendered</h1>
-<%= react_component("Clock", { seconds: true, timezone: '' }, { prerender: true }) %>
+<%= react_component("Clock", props: { seconds: true, timezone: '' }, prerender: true) %>
